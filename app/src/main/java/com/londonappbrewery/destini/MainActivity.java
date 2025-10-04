@@ -96,9 +96,8 @@ public class MainActivity extends AppCompatActivity
 
     private void GameOver()
     {
-        ViewGroup layout = (ViewGroup) mRedButton.getParent();
-        layout.removeView(mRedButton);
-        layout.removeView(mBlueButton);
+        mRedButton.setVisibility(View.GONE);
+        mBlueButton.setVisibility(View.GONE);
     }
 
     private void AdvanceStoryStep()
